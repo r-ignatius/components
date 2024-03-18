@@ -8,6 +8,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -19,6 +20,7 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
+import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
     PizzaToppingsComponent,
     TjsMultiplicationComponent,
     JtaDropdownComponent,
-    SnamAdditionComponent
+    SnamAdditionComponent,
+    PbrummelAdditionComponent
+
   ],
   imports: [
     BrowserModule,
