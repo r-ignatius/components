@@ -25,6 +25,7 @@ import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import { NumberGeneratorComponent } from './number-generator/number-generator.component';
 import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
+import { CajNumberComponent } from './caj-number/caj-number.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
     MtunaAdditionComponent,
     NumberGeneratorComponent,
     CebAdditionComponent,
+    CajNumberComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,12 +52,10 @@ import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
     MatSelectModule,
     MatFormFieldModule,
     MatSlideToggleModule,
-    MatChipsModule
-  , MatRadioModule
+    MatChipsModule,
+    MatRadioModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
