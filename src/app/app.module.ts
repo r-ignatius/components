@@ -9,6 +9,10 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatRadioModule } from '@angular/material/radio';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ReiAdditionComponent } from './rei-addition/rei-addition.component';
+
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
 
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -29,9 +33,10 @@ import { CajNumberComponent } from './caj-number/caj-number.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
-    TjsMultiplicationComponent,
+    AppComponent
+    , PizzaToppingsComponent
+    , ReiAdditionComponent
+    , TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent,
     PbrummelAdditionComponent,
@@ -40,6 +45,7 @@ import { CajNumberComponent } from './caj-number/caj-number.component';
     CebAdditionComponent,
     CajNumberComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,6 +60,8 @@ import { CajNumberComponent } from './caj-number/caj-number.component';
     MatSlideToggleModule,
     MatChipsModule,
     MatRadioModule,
+    MatButtonToggleModule
+    ,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
